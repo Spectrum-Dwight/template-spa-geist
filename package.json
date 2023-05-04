@@ -1,0 +1,36 @@
+{
+  "name": "template-spa-geist",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@nextui-org/react": "1.0.0-beta.12",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "cmdk": "^0.2.0",
+    "inter-ui": "^3.19.3",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-feather": "^2.0.10",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@hookform/devtools": "^4.3.1",
+    "@prisma/client": "^4.12.0",
+    "@types/bcryptjs": "^2.4.2",
+    "bcryptjs": "^2.4.3",
+    "next-auth": "^4.21.1",
+    "prisma": "^4.12.0",
+    "react-hook-form": "^7.43.9",
+    "react-query": "^3.39.3",
+    "react-toastify": "^9.1.2"
+  }
+}

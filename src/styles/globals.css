@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --bg-color: #fafafa;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  min-height: 88px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.title-width {
+  width: 1170px;
+}
+
+.title-text {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+.geist-link {
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 228px;
+  border-radius: 5px;
+  transition: background-color 0.15s ease;
+  font-size: 14px;
+  color: black;
+}
+
+.reset {
+  all: unset;
+}
+
+/* .geist-link:hover {
+  background-color: #eaeaea;
+} */
+
+.tabs > .content {
+  display: none;
+}
+
+/* Login */
+
+.center-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 1200px;
+  padding-left: 5px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* This sets the vertical spacing to 0.5rem (or 2px) */
+  width: 300px;
+}
+
+/* Header */
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.login-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 1170px;
+  padding: 0 20px;
+}
+
+/* Dashboard */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.75rem;
+  min-height: 50vh;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 1170px;
+  padding: 1rem;
+}
+
+.settings-content {
+  display: flex;
+  justify-content: space-around;
+  min-width: 1170px;
+  padding: 1rem;
+}
+
+.settings-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 800px;
+}
+
+/* Management */
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  margin-bottom: 16px;
+}
+
+.input-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.input-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.spinner-box {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add User Form */
+
+.user-form-container {
+  width: 1170px;
+  padding: 12px;
+}
+
+.user-form-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.user-form {
+  display: flex;
+  gap: 24px;
+  justify-content: space-around;
+}
+
+.additional-info {
+  width: 450px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Skeleton Loading */
+
+.skeleton {
+  opacity: 0.7;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.card-container {
+  height: 229px;
+  border-radius: 5px;
+}
