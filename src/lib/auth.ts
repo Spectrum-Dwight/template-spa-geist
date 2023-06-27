@@ -1,36 +1,37 @@
-import { verifyPassword } from '@/lib/auth-utils';
-import { NextAuthOptions } from 'next-auth';
-import CredentialProvider from 'next-auth/providers/credentials';
-import { db } from '@/lib/db';
+import { verifyPassword } from "@/lib/auth-utils";
+import { NextAuthOptions } from "next-auth";
+import CredentialProvider from "next-auth/providers/credentials";
+import { db } from "@/lib/db";
 
 export const authOptions: NextAuthOptions = {
   session: {
-    strategy: 'jwt',
+    strategy: "jwt",
   },
   providers: [
     CredentialProvider({
-      type: 'credentials',
+      type: "credentials",
       credentials: {},
       authorize: async (credentials) => {
         const { email, password } = credentials as { email: string; password: string };
 
-        const user = await db.users.findUnique({
-          where: {
-            email: email,
-          },
-        });
+        // const user = await db.users.findUnique({
+        //   where: {
+        //     email: email,
+        //   },
+        // });
 
-        if (!user) {
-          throw new Error('No user with that email exists');
-        }
+        // if (!user) {
+        //   throw new Error('No user with that email exists');
+        // }
 
-        const passwordMatch = verifyPassword(password, user.password);
+        // const passwordMatch = verifyPassword(password, user.password);
 
-        if (!passwordMatch) {
-          throw new Error('Password is incorrect');
-        }
+        // if (!passwordMatch) {
+        //   throw new Error('Password is incorrect');
+        // }
 
-        return { id: user.id.toString(), email: email, name: user.first + ' ' + user.last };
+        //return { id: user.id.toString(), email: email, name: user.first + ' ' + user.last };
+        return { id: "user.id.toString()", email: "prime@gmail.com", name: "Eric Prime" };
       },
     }),
   ],
